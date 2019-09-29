@@ -16,11 +16,11 @@ import json
 # Запрос токена
 def get_access_token(user_id):
     """
-    Запрашивает токен упользователяпо его id vk или псевдониму
+    Запрашивает токен у пользователя по его id vk или псевдониму
     :return: ссылка для авторизации пользователя
     """
     oauth_url = 'https://oauth.vk.com/authorize'
-    app_id = 6849372
+    app_id = 7049864
     auth_data = {
         'client_id': app_id,
         'redirect_uti': 'www.ok.ru',
@@ -74,7 +74,7 @@ def pg_db_connect(option, users_list=None):
 
 
 # TOKEN
-token = '7f4c79e6f0116ddb437929100ac36076f91b6a5bab3daa5a01ddea01efa3bc11527c22ed9afde8861f54a'
+token = '5fe54a5c9d3d89e522fe8a36f91eeb739fd986361dc2bf58a3703e003f80270795e873dc99ec17d573ef7'
 
 
 class User:
@@ -404,14 +404,14 @@ class User:
 
 
 # Запрашиваем токен
-# get_access_token(80619823)
+# get_access_token(3178423)
 
-# 72643786
-# 80619823
+# 143181452
+# 3178423
 
-user = User(80619823)
+user = User(3178423)
 
 pprint(User.get_pair_user_lists(user))
 
-# pprint(User.get_pair_user_parameters(user, '80619823, 72643786'))
-# User.get_3_profile_photos(user, [80619823])
+# pprint(User.get_pair_user_parameters(user, '3178423, 143181452'))
+# User.get_3_profile_photos(user, [3178423])
