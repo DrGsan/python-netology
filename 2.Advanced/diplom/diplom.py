@@ -44,7 +44,7 @@ def create_db():
             create table if not exists profile (
                 id serial primary key,
                 profile_id integer not null
-            ) 
+            )
              """)
             print('База данных и таблицы созданы')
 
@@ -92,8 +92,10 @@ class User:
         params['fields'] = 'domain'
         while True:
             try:
-                response_users_get = requests.get('https://api.vk.com/method/users.get', params)
-                result_users_get = response_users_get.json()['response'][0]['domain']
+                response_users_get = requests.get(
+                    'https://api.vk.com/method/users.get', params)
+                result_users_get = response_users_get.json()[
+                    'response'][0]['domain']
                 sleep(0.25)
                 link = 'https://vk.com/' + result_users_get
                 return link
@@ -115,7 +117,7 @@ class User:
         Разбирает  весь текст на отдельные слова и складывает в множество
         :return: Множество
         """
-        pattern = '[\w]+'
+        pattern = r'[\w]+'
         text = re.findall(pattern, text, re.U)
         return text
 
@@ -125,7 +127,8 @@ class User:
         """
         params = self.get_params()
         params['user_id'] = self.user_id
-        response_group_list = requests.get('https://api.vk.com/method/groups.get', params)
+        response_group_list = requests.get(
+            'https://api.vk.com/method/groups.get', params)
         result_groups_list = response_group_list.json()['response']['items']
         return result_groups_list
 
@@ -145,7 +148,8 @@ class User:
             params['count'] = 1000
             while True:
                 try:
-                    response = requests.get('https://api.vk.com/method/users.search', params)
+                    response = requests.get(
+                        'https://api.vk.com/method/users.search', params)
                     result = response.json()['response']['items']
                     sleep(0.25)
                     # print(result)
@@ -179,7 +183,8 @@ class User:
         params = self.get_params()
         params['user_ids'] = self.user_id
         params['fields'] = 'bdate, sex, city, interests, relation'
-        response_users_get = requests.get('https://api.vk.com/method/users.get', params)
+        response_users_get = requests.get(
+            'https://api.vk.com/method/users.get', params)
         result_users_get = response_users_get.json()['response'][0]
         for key, value in result_users_get.items():
             if key in (params['fields']):
@@ -204,7 +209,8 @@ class User:
         params = self.get_params()
         params['user_ids'] = user_id
         params['fields'] = 'interests'
-        response_users_get = requests.get('https://api.vk.com/method/users.get', params)
+        response_users_get = requests.get(
+            'https://api.vk.com/method/users.get', params)
         while True:
             try:
                 result_users_get = response_users_get.json()['response'][0]
@@ -240,22 +246,26 @@ class User:
                     print(f'Сбор фотографий по пользователю {User(profile)}')
                     final_profile_dict = dict()
                     params['owner_id'] = profile
-                    response_profile_photos = requests.get('https://api.vk.com/method/photos.get', params)
-                    result = response_profile_photos.json()['response']['items']
+                    response_profile_photos = requests.get(
+                        'https://api.vk.com/method/photos.get', params)
+                    result = response_profile_photos.json()[
+                        'response']['items']
                     for item in result:
                         profile_dict = dict()
                         profile_dict['profile_id'] = item['owner_id']
                         profile_dict['photo'] = item['sizes'][-1]['url']
                         profile_dict['likes'] = item['likes']['count']
                         profile_photo_list.append(profile_dict)
-                        profile_photo_list = sorted(profile_photo_list, key=itemgetter('likes'), reverse=True)
+                        profile_photo_list = sorted(
+                            profile_photo_list, key=itemgetter('likes'), reverse=True)
                     final_profile_dict['id'] = str((User(profile)))
                     final_profile_dict['photo_1'] = profile_photo_list[0]['photo']
                     final_profile_dict['photo_2'] = profile_photo_list[1]['photo']
                     final_profile_dict['photo_3'] = profile_photo_list[2]['photo']
                     final_profile_list.append(final_profile_dict)
                 except KeyError:
-                    result_error = response_profile_photos.json()['error']['error_msg']
+                    result_error = response_profile_photos.json()[
+                        'error']['error_msg']
                     print(result_error)
                     continue
                 break
@@ -286,7 +296,8 @@ class User:
                     params[key] = item
                     while True:
                         try:
-                            response = requests.get('https://api.vk.com/method/users.search', params)
+                            response = requests.get(
+                                'https://api.vk.com/method/users.search', params)
                             result = response.json()['response']['items']
                             sleep(0.25)
                             for item in result:
@@ -297,7 +308,8 @@ class User:
                         except requests.exceptions.ReadTimeout:
                             continue
                         except KeyError:
-                            result_error = response.json()['error']['error_msg']
+                            result_error = response.json()[
+                                'error']['error_msg']
                             print(result_error)
                             continue
                         break
@@ -311,7 +323,8 @@ class User:
                     params['sex'] = 1
                 while True:
                     try:
-                        response = requests.get('https://api.vk.com/method/users.search', params)
+                        response = requests.get(
+                            'https://api.vk.com/method/users.search', params)
                         result = response.json()['response']['items']
                         sleep(0.2)
                         for item in result:
@@ -338,7 +351,8 @@ class User:
                     print('Город')
                 while True:
                     try:
-                        response = requests.get('https://api.vk.com/method/users.search', params)
+                        response = requests.get(
+                            'https://api.vk.com/method/users.search', params)
                         result = response.json()['response']['items']
                         sleep(0.2)
                         for item in result:
@@ -369,7 +383,10 @@ class User:
             for p in param:
                 if p in value:
                     pair_user_list.append(key)
-        pair_user_list = sorted(pair_user_list, key=lambda x: pair_user_list.count(x), reverse=True)
+        pair_user_list = sorted(
+            pair_user_list,
+            key=lambda x: pair_user_list.count(x),
+            reverse=True)
         # Создаем таблицу для профилей
         create_db()
         print('Проверяем наличие профилей в базе данных')
