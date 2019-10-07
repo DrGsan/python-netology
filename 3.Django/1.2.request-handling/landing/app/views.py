@@ -12,6 +12,15 @@ counter_click = Counter()
 
 def index(request):
     # Реализуйте логику подсчета количества переходов с лендига по GET параметру from-landing
+    from_landing = request.GET.get('from-landing')
+    if from_landing == 'original':
+        counter_click['original'] += 1
+        print(f' клики {counter_click}')
+        # return render_to_response('landing.html')
+    elif from_landing == 'test':
+        counter_click['test'] += 1
+        print(counter_click)
+        return render_to_response('landing_alternate.html')
     return render_to_response('index.html')
 
 
@@ -20,15 +29,25 @@ def landing(request):
     # в зависимости от GET параметра ab-test-arg
     # который может принимать значения original и test
     # Так же реализуйте логику подсчета количества показов
-    return render_to_response('landing.html')
+    ab_test_arg = request.GET.get('ab-test-arg', 'не верный параметр')
+    if ab_test_arg == 'original':
+        counter_show['original'] += 1
+        print(f'показы {counter_show}')
+        return render_to_response('landing.html')
+    elif ab_test_arg == 'test':
+        counter_show['test'] += 1
+        print(f'показы {counter_show}')
+        return render_to_response('landing_alternate.html')
 
 
 def stats(request):
     # Реализуйте логику подсчета отношения количества переходов к количеству показов страницы
-    # Чтобы отличить с какой версии лендинга был переход
-    # проверяйте GET параметр marker который может принимать значения test и original
     # Для вывода результат передайте в следующем формате:
+    test_conversion = counter_click['test'] / counter_show['test']
+    original_conversion = counter_click['original'] / counter_show['original']
     return render_to_response('stats.html', context={
-        'test_conversion': 0.5,
-        'original_conversion': 0.4,
+        'test_conversion': test_conversion,
+        'original_conversion': original_conversion,
     })
+
+https://github.com/KirillDaX/dj-5/blob/7d2491d05398c147de929403d2597090f4c9abb9/request-handling/landing/app/urls.py
