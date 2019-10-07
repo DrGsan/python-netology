@@ -49,5 +49,3 @@ def stats(request):
         'test_conversion': test_conversion,
         'original_conversion': original_conversion,
     })
-
-https://github.com/KirillDaX/dj-5/blob/7d2491d05398c147de929403d2597090f4c9abb9/request-handling/landing/app/urls.py
