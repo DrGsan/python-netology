@@ -11,17 +11,16 @@ counter_click = Counter()
 
 
 def index(request):
-    # Реализуйте логику подсчета количества переходов с лендига по GET параметру from-landing
-    from_landing = request.GET.get('from-landing')
-    if from_landing == 'original':
+    if request.GET.get('from-landing') == 'original':
         counter_click['original'] += 1
-        print(f' клики {counter_click}')
-        # return render_to_response('landing.html')
-    elif from_landing == 'test':
+    elif request.GET.get('from-landing') == 'test':
         counter_click['test'] += 1
-        print(counter_click)
-        return render_to_response('landing_alternate.html')
-    return render_to_response('index.html')
+    context = {
+        'click_original': counter_click['original'],
+        'click_test': counter_click['test']
+    }
+    # Реализуйте логику подсчета количества переходов с лендига по GET параметру from-landing
+    return render_to_response('index.html', context)
 
 
 def landing(request):
@@ -29,25 +28,29 @@ def landing(request):
     # в зависимости от GET параметра ab-test-arg
     # который может принимать значения original и test
     # Так же реализуйте логику подсчета количества показов
-    ab_test_arg = request.GET.get('ab-test-arg', 'не верный параметр')
-    if ab_test_arg == 'original':
+    if request.GET.get('ab-test-arg') == 'original':
         counter_show['original'] += 1
-        print(f'показы {counter_show}')
         return render_to_response('landing.html')
-    elif ab_test_arg == 'test':
+    elif request.GET.get('ab-test-arg') == 'test':
         counter_show['test'] += 1
-        print(f'показы {counter_show}')
         return render_to_response('landing_alternate.html')
 
 
 def stats(request):
     # Реализуйте логику подсчета отношения количества переходов к количеству показов страницы
     # Для вывода результат передайте в следующем формате:
-    if not counter_show['alternative']:
-        counter_show['alternative'] = 1
-    if not counter_show['original']:
-        counter_show['original'] = 1
-    return render_to_response('stats.html', context={
-        'test_conversion': format(counter_click['alternative'] / counter_show['alternative'], '.1f'),
-        'original_conversion': format(counter_click['original'] / counter_show['original'], '.1f'),
-    })
+    try:
+        test = counter_click['test'] / counter_show['test']
+    except ZeroDivisionError:
+        test = 0
+
+    try:
+        original = counter_click['original'] / counter_show['original']
+    except ZeroDivisionError:
+        original = 0
+
+    context = {
+        'test_conversion': test,
+        'original_conversion': original
+    }
+    return render_to_response('stats.html', context)
