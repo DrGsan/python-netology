@@ -1,27 +1,50 @@
 import unittest
-from diplom.main import User
-from mock import patch
-
-info_user = [{'id': , 'first_name': 'Александр', 'last_name': 'Драгой',
-              'sex': 2, 'bdate': '29.12.1991', 'city': {'id': 1, 'title': 'Москва'},
-              'interests': '', 'music': '', 'books': ''}]
+import main
 
 
-@patch('builtins.input', lambda *args: '22', '23')
 class Test(unittest.TestCase):
+    def test_get_group_list(self):
+        user = User('3178423')
+        self.assertIsInstance(user, User)
 
-    # def test_is_instance_of_vkinder(self):
-    #     user = User()
-    #     self.assertIsInstance(user, User)
 
-    # def test_find_users(self):
-    #     user = User()
-    #     self.assertIsInstance(user.get_users_info(info_user), tuple)
 
-    # def test_get_raiting_users(self):
-    #     user = User()
-    #     self.assertIsInstance(user.get_raiting_users(info_user), list)
 
-    # def test_get_users_photo(self):
-    #     user = User()
-    #     self.assertEqual(len(user.get_users_photo(info_user)), 10)
+
+    def test_find_users(self):
+        vkinder = Vkinder('418095195')
+        self.assertIsInstance(vkinder.find_users(), list)
+
+    def test_find_users_is_instance_of_user(self):
+        vkinder = Vkinder('418095195')
+        self.assertIsInstance(vkinder.find_users()[0], User)
+
+    def test_count_weight(self):
+        vkinder = Vkinder('418095195')
+        self.assertNotEqual(vkinder.find_users(), vkinder.count_weight(vkinder.find_users()))
+
+    def test_sort_users(self):
+        vkinder = Vkinder('418095195')
+        for_sort = vkinder.find_users()
+        self.assertEqual(len(vkinder.sort_users(for_sort)), 10)
+
+    def test_sort_users_is_instance_of_user(self):
+        vkinder = Vkinder('418095195')
+        for_sort = vkinder.find_users()
+        self.assertIsInstance(vkinder.sort_users(for_sort)[0], User)
+
+    def test_find_and_sort_photos(self):
+        vkinder = Vkinder('418095195')
+        for_photos = vkinder.sort_users(vkinder.find_users(35, 45))
+        self.assertEqual(len(vkinder.find_and_sort_photos(for_photos)), 10)
+
+    def test_find_and_sort_photosv_is_list(self):
+        vkinder = Vkinder('418095195')
+        for_photos = vkinder.sort_users(vkinder.find_users())
+        self.assertIsInstance(vkinder.find_and_sort_photos(for_photos), list)
+
+
+
+
+if __name__ == '__main__':
+    unittest.main()

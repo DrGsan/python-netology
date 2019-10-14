@@ -1,18 +1,21 @@
 import requests
 import re
 import datetime
+import psycopg2 as pg
 from time import sleep
 from urllib.parse import urlencode
 from pprint import pprint
 from operator import itemgetter
 import json
-from db.db import create_db, pg_db_connect
 
+# TODO: Остановился на функции get_3_profile_photos.
+#       Нужно сформировать json с тремя фотками.
+#       Отфильтровать фотки по количеству лайков
 
 # Запрос токена
 def get_access_token(user_id):
     """
-    Запрашивает токен у пользователя по его id vk или псевдониму
+    Запрашивает токен упользователяпо его id vk или псевдониму
     :return: ссылка для авторизации пользователя
     """
     oauth_url = 'https://oauth.vk.com/authorize'
@@ -28,6 +31,43 @@ def get_access_token(user_id):
     result = print('?'.join((oauth_url, urlencode(auth_data))))
     return result
 
+# Работа с БД
+def create_db():
+    """
+    Создает таблицу, если ее еще нет в БД
+    """
+    with pg.connect('dbname=netology_db user=netology_user password=user') as conn:
+        with conn.cursor() as cur:
+            cur.execute("""
+            create table if not exists profile (
+                id serial primary key,
+                profile_id integer not null
+            ) 
+             """)
+            print('База данных и таблицы созданы')
+
+def pg_db_connect(option,users_list=None):
+    """
+    :param option: Режим вызова функции.
+        insert - вставка значений в БД
+        check - проверка наличия значенияв БД
+    :param users_list: Список пользователей для проверки/вставки
+    :return: возвращает список пользователей из БД
+    """
+    with pg.connect('dbname=netology_db user=netology_user password=user') as conn:
+        if option == 'insert':
+            with conn.cursor() as cur:
+                for user in users_list:
+                    cur.execute("""
+                    insert into profile (profile_id) values (%s)
+                    """, (user,))
+        elif option == 'check':
+            with conn.cursor() as cur:
+                cur.execute("""
+                select profile_id from profile;
+                """)
+                result = cur.fetchall()
+            return result
 
 # TOKEN
 token = '5fe54a5c9d3d89e522fe8a36f91eeb739fd986361dc2bf58a3703e003f80270795e873dc99ec17d573ef7'
