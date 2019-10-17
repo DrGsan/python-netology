@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 from .forms import CalcForm
 
 
-class CalcView(TemplateView):
+class calc_view(TemplateView):
     template_name = "app/calc.html"
 
     def get(self, request):
