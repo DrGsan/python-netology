@@ -7,6 +7,7 @@ from django.core.cache import cache
 
 from .models import City
 from .forms import SearchTicket
+from .models import City
 
 
 def ticket_page_view(request):
@@ -20,6 +21,16 @@ def ticket_page_view(request):
 
 
 def cities_lookup(request):
-    """Ajax request предлагающий города для автоподстановки, возвращает JSON"""
-    results = []
+    look_for = request.GET.get('term')
+    key_cache = look_for.lower()
+    results = cache.get(key_cache)
+
+    if results is None:
+        results = []
+        cities = City.objects.all()
+        for city in cities:
+            if look_for in city.name.lower():
+                results.append(city.name)
+        cache.set(key_cache, results)
+
     return JsonResponse(results, safe=False)

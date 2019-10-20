@@ -6,9 +6,13 @@
     <img src="{{ MEDIA_URL }}{{ product.img.url }}" class="preview">
     <h4>Отзывы:</h4>
     <ul>
-        {% for review in reviews %}
-            <li><p>{{review.text}}</p></li>
-        {% endfor %}
+        {% if reviews %}
+            {% for review in reviews %}
+                <li><p>{{review.text}}</p></li>
+            {% endfor %}
+        {% else %}
+            Отзывов пока нет. Будьте первым!
+        {% endif %}
     </ul>
     {% if is_review_exist %}
         <p>Отзыв от вас уже есть</p>
@@ -20,7 +24,7 @@
         {% csrf_token %}
         {{ form }}
         <br>
-        <input type="submit" value="Отправить отзыв"/>
+        {% if form %}<input type="submit" value="Отправить отзыв"/>{% endif %}
     </form>
 </div>
 {% endblock %}

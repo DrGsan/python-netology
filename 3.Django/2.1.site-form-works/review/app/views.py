@@ -16,18 +16,51 @@ def product_list_view(request):
     return render(request, template, context)
 
 
+# def product_view(request, pk):
+#     template = 'app/product_detail.html'
+#     product = get_object_or_404(Product, id=pk)
+#
+#     form = ReviewForm
+#     if request.method == 'POST':
+#         # логика для добавления отзыва
+#         pass
+#
+#     context = {
+#         'form': form,
+#         'product': product
+#     }
+#
+#     return render(request, template, context)
+
+
 def product_view(request, pk):
     template = 'app/product_detail.html'
     product = get_object_or_404(Product, id=pk)
-
+    # ID продукта
+    product_id = request.path.lstrip("/product/").rstrip("/")
+    if 'reviewed_products' not in request.session:
+        request.session['reviewed_products'] = []
+    # Получим все отзывы
+    reviews = Review.objects.all().filter(product=Product.objects.get(id=product_id))
     form = ReviewForm
     if request.method == 'POST':
-        # логика для добавления отзыва
-        pass
+        # Запишем в сессию, что сделали отзыв продукту
+        request.session['reviewed_products'].append(product_id)
+        request.session.save()
+        review_text = request.POST['text']  # отзыв
+        review = Review(text=review_text, product=Product.objects.get(id=product_id))  # запись отзыва в БД
+        review.save()
 
+    if product_id not in request.session['reviewed_products']:
+        context = {
+            'form': form,
+            'product': product,
+            'reviews': reviews
+        }
+        return render(request, template, context)
     context = {
-        'form': form,
-        'product': product
+        'product': product,
+        'is_review_exist': True,
+        'reviews': reviews
     }
-
     return render(request, template, context)

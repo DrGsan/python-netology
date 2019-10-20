@@ -3,7 +3,7 @@ from django.forms.widgets import TextInput
 
 class AjaxInputWidget(TextInput):
     template_name = 'widget/ajax_input_widget.html'
-    url = ''
+    url = 'api/city_ajax'
 
     def __init__(self, url, attrs=None):
         """url: путь к ajax API которое будет возвращать список городов для подстановки"""
