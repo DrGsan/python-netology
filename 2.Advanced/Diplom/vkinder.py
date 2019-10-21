@@ -3,8 +3,7 @@ import json
 from db import insert_to_db
 import random
 
-
-# TOKEN = '5fe54a5c9d3d89e522fe8a36f91eeb739fd986361dc2bf58a3703e003f80270795e873dc99ec17d573ef7'
+TOKEN = '5fe54a5c9d3d89e522fe8a36f91eeb739fd986361dc2bf58a3703e003f80270795e873dc99ec17d573ef7'
 
 vk_session = vk_api.VkApi(token=TOKEN)
 

@@ -1,8 +1,8 @@
-import psycopg2
+import psycopg2 as pg
 
 
 def insert_to_db(*args):
-    conn = psycopg2.connect('dbname=Vkinder user=postgres')
+    conn = pg.connect('dbname=netology_db user=netology_user password=user')
     cur = conn.cursor()
     cur.execute(('INSERT INTO users (id_user_vk, id_photo_vk, likes) VALUES (%s, %s, %s)'), args)
     conn.commit()
@@ -10,7 +10,7 @@ def insert_to_db(*args):
 
 
 def create_db():  # создает таблицы
-    conn = psycopg2.connect('dbname=Vkinder user=postgres')
+    conn = pg.connect('dbname=netology_db user=netology_user password=user')
     cur = conn.cursor()
     cur.execute('CREATE TABLE IF NOT EXISTS Users ('
                 'id_user_vk INT NOT NULL,'
