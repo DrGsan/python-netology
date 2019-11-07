@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form id="contact_form" action="{%url 'account:login' %}" method="post">
+        {% load bootstrap3 %}
+        {% csrf_token %}
+        {% bootstrap_form login_form %}
+        {% buttons %}
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Войти</button>
+            <div>
+        {% endbuttons %}
+    </form>
+</body>
+</html>
