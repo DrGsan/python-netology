@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('index.html', index, name='index'),
-    path('smartphones.html', smartphones, name='smartphones'),
+    path('smartphones/', smartphones, name='smartphones'),
     path('empty_section.html', empty_section, name='empty_section'),
     path('phone.html', phone, name='phone'),
     path('cart.html', cart, name='cart'),
