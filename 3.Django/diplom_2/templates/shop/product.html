@@ -1,0 +1,26 @@
+{% extends "shop/basic.html" %}
+
+{% block title%} {{product}} {% endblock %}
+
+{% block content %}
+
+<main role="main">
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>{{product}}</h2>
+        <img src="{{product.image.url}}" width="120">
+        <p>{{product.content}}</p>
+        <form method="post" action="">
+            {% csrf_token %}
+          <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
+        </form>
+      </div>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+{% endblock %}
