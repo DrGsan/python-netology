@@ -13,15 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponseRedirect
-from .views import ArticleView, CategoryView, ProductView, cart
+from django.conf.urls import include
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('', lambda x: HttpResponseRedirect('/shop/')),
-    path('shop/', ArticleView.as_view(), name='articles'),
-    path('shop/category/<slug:slug>/', CategoryView.as_view(), name='category'),
-    path('shop/product/<slug:slug>/', ProductView.as_view(), name='product'),
-    path('shop/cart/', cart, name='cart'),
-]
+    path('admin/', admin.site.urls),
+    path('', include('shop.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,46 @@
+
+{% extends "shop/basic.html" %}
+
+{% block title%} Главная {% endblock %}
+
+{% block content %}
+
+
+<main role="main">
+  {% for article in article_list %}
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">{{article.title}}</h1>
+        <p>{{ article.description}}</p>
+      </div>
+    </div>
+
+
+  <div class="container mb-5">
+    <div class="row">
+      {% for product in article.articlesproduct_set.all %}
+        <div class="col-md-4">
+          <h2>{{product.product.name}}</h2>
+          <a href="{% url 'product' product.product.slug%}">
+            <img src="{{product.product.image.url}}" width="180">
+          </a>
+          <form method="POST" action="">
+            {% csrf_token %}
+            <input type="hidden" name="article_list" value="{{article_list}}">
+            <input type="hidden" name="product" value="{{product.product.slug}}">
+            <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
+          </form>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+</main>
+
+<hr>
+<footer class="container">
+  <p>© Просто магазин 2018</p>
+</footer>
+
+{% endblock %}

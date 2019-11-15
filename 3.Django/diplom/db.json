@@ -1,0 +1,1606 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "shop",
+    "model": "article"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "shop",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "shop",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "shop",
+    "model": "rubric"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "shop",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "shop",
+    "model": "orderitem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "shop",
+    "model": "articlesproduct"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6mcsmkxqg0sjexan7zarpuve0onrbo4t",
+  "fields": {
+    "session_data": "OWZjNThmNTk2MmMwNTlkYzM0YzcyYzVmMjI1YjVlZjgyM2Q4YWQ2ZTp7fQ==",
+    "expire_date": "2019-08-24T22:15:10.374Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6qwvtefx7iultk3tgdi0w4mwbe2evezd",
+  "fields": {
+    "session_data": "MTZmMzQ4OGViOTc5MjUxNjQ5YjI3YjUxZjQ0OTg4Y2RmZWFhZDBkMzp7ImNhcnQiOnsia29tcGxla3R1eXVzaGllLTEiOjEsInN0aXJhbG5heWEtbWFzaGluYS0yIjoxLCJrb21wbGVrdHV5dXNoaWUtMiI6MSwibm91dGJ1ay0xIjoxLCJub3V0YnVrLTIiOjEsIm5vdXRidWstMyI6MSwibm91dGJ1ay00IjoxLCJub3V0YnVrLTUiOjEsIm5vdXRidWstNiI6MSwibm91dGJ1ay03IjoxLCJub3V0YnVrLTgiOjF9LCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZDhhMGQ2NDc3M2ExYjEwYzAxMjkwNjMzZjE1OTJlOGRmZTFkNWQwNCJ9",
+    "expire_date": "2019-08-25T05:24:49.249Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1",
+    "content": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1",
+    "price": 1,
+    "image": "products/2019/08/11/65827.jpg",
+    "published": "2019-08-11",
+    "category": 2,
+    "slug": "noutbuk-1"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 2",
+    "content": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 2\u041d\u043e\u0443\u0442\u0431\u0443\u043a 2\u041d\u043e\u0443\u0442\u0431\u0443\u043a 2\u041d\u043e\u0443\u0442\u0431\u0443\u043a 2\u041d\u043e\u0443\u0442\u0431\u0443\u043a 2",
+    "price": 3,
+    "image": "products/2019/08/11/117987.jpg",
+    "published": "2019-08-11",
+    "category": 2,
+    "slug": "noutbuk-2"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 5,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 3",
+    "content": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 3\u041d\u043e\u0443\u0442\u0431\u0443\u043a 3\u041d\u043e\u0443\u0442\u0431\u0443\u043a 3\u041d\u043e\u0443\u0442\u0431\u0443\u043a 3\u041d\u043e\u0443\u0442\u0431\u0443\u043a 3\u041d\u043e\u0443\u0442\u0431\u0443\u043a 3",
+    "price": 4,
+    "image": "products/2019/08/11/2114950.jpg",
+    "published": "2019-08-11",
+    "category": 2,
+    "slug": "noutbuk-3"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 6,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4",
+    "content": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4",
+    "price": 5,
+    "image": "products/2019/08/11/s1200.jpeg",
+    "published": "2019-08-11",
+    "category": 2,
+    "slug": "noutbuk-4"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 7,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5",
+    "content": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5",
+    "price": 5,
+    "image": "products/2019/08/11/f322419ff6535a292f8078c5ffeee391.jpg",
+    "published": "2019-08-11",
+    "category": 2,
+    "slug": "noutbuk-5"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 8,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 6",
+    "content": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 6\u041d\u043e\u0443\u0442\u0431\u0443\u043a 6\u041d\u043e\u0443\u0442\u0431\u0443\u043a 6\u041d\u043e\u0443\u0442\u0431\u0443\u043a 6",
+    "price": 6,
+    "image": "products/2019/08/11/1016050660.jpg",
+    "published": "2019-08-11",
+    "category": 2,
+    "slug": "noutbuk-6"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 9,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 7",
+    "content": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 7\u041d\u043e\u0443\u0442\u0431\u0443\u043a 7\u041d\u043e\u0443\u0442\u0431\u0443\u043a 7",
+    "price": 7,
+    "image": "products/2019/08/11/49117.jpg",
+    "published": "2019-08-11",
+    "category": 2,
+    "slug": "noutbuk-7"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 10,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 8",
+    "content": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 8\u041d\u043e\u0443\u0442\u0431\u0443\u043a 8\u041d\u043e\u0443\u0442\u0431\u0443\u043a 8\u041d\u043e\u0443\u0442\u0431\u0443\u043a 8\u041d\u043e\u0443\u0442\u0431\u0443\u043a 8\u041d\u043e\u0443\u0442\u0431\u0443\u043a 8",
+    "price": 8,
+    "image": "products/2019/08/11/HP_Spectre_x360_20171.jpg",
+    "published": "2019-08-11",
+    "category": 2,
+    "slug": "noutbuk-8"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 11,
+  "fields": {
+    "name": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 1",
+    "content": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 1",
+    "price": 3,
+    "image": "products/2019/08/11/en.jpg",
+    "published": "2019-08-11",
+    "category": 3,
+    "slug": "komplektuyushie-1"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 12,
+  "fields": {
+    "name": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 2",
+    "content": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 2\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 2\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 2",
+    "price": 4,
+    "image": "products/2019/08/11/0a46bb7c017eaacc8348e8aa7f38324e.jpg",
+    "published": "2019-08-11",
+    "category": 3,
+    "slug": "komplektuyushie-2"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 13,
+  "fields": {
+    "name": "\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 1",
+    "content": "\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 1\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 1\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 1",
+    "price": 100,
+    "image": "products/2019/08/11/i8cyvXAbrf.jpg",
+    "published": "2019-08-11",
+    "category": 4,
+    "slug": "stiralnaya-mashina-1"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 14,
+  "fields": {
+    "name": "\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 2",
+    "content": "\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 \u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 \u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430",
+    "price": 45,
+    "image": "products/2019/08/11/foto.jpg",
+    "published": "2019-08-11",
+    "category": 4,
+    "slug": "stiralnaya-mashina-2"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438",
+    "index": 7,
+    "rubric": 2,
+    "slug": "noutbuki"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u043e\u0432",
+    "index": 6,
+    "rubric": 2,
+    "slug": "komplektuyushie"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {
+    "name": "\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0430\u0448\u0438\u043d\u044b",
+    "index": 1,
+    "rubric": 3,
+    "slug": "stiralnye-mashiny"
+  }
+},
+{
+  "model": "shop.rubric",
+  "pk": 2,
+  "fields": {
+    "name": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0438 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435"
+  }
+},
+{
+  "model": "shop.rubric",
+  "pk": 3,
+  "fields": {
+    "name": "\u0411\u044b\u0442\u043e\u0432\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430"
+  }
+},
+{
+  "model": "shop.article",
+  "pk": 2,
+  "fields": {
+    "title": "\u041d\u0430\u0431\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 1",
+    "description": "\u041a\u0443\u043f\u0438 \u0432\u0441\u0435 \u0442\u043e\u0432\u0430\u0440\u044b \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439",
+    "published": "2019-08-11",
+    "products": []
+  }
+},
+{
+  "model": "shop.article",
+  "pk": 3,
+  "fields": {
+    "title": "\u041d\u0430\u0431\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 2",
+    "description": "\u041d\u0430\u0431\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 2\u041d\u0430\u0431\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 2",
+    "published": "2019-08-11",
+    "products": []
+  }
+},
+{
+  "model": "shop.articlesproduct",
+  "pk": 3,
+  "fields": {
+    "article": 2,
+    "product": 3
+  }
+},
+{
+  "model": "shop.articlesproduct",
+  "pk": 4,
+  "fields": {
+    "article": 2,
+    "product": 11
+  }
+},
+{
+  "model": "shop.articlesproduct",
+  "pk": 5,
+  "fields": {
+    "article": 2,
+    "product": 13
+  }
+},
+{
+  "model": "shop.articlesproduct",
+  "pk": 6,
+  "fields": {
+    "article": 3,
+    "product": 11
+  }
+},
+{
+  "model": "shop.articlesproduct",
+  "pk": 7,
+  "fields": {
+    "article": 3,
+    "product": 3
+  }
+},
+{
+  "model": "shop.articlesproduct",
+  "pk": 8,
+  "fields": {
+    "article": 3,
+    "product": 13
+  }
+},
+{
+  "model": "shop.articlesproduct",
+  "pk": 10,
+  "fields": {
+    "article": 3,
+    "product": 10
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 12,
+  "fields": {
+    "order": 9,
+    "product": 13,
+    "price": "100.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 13,
+  "fields": {
+    "order": 9,
+    "product": 3,
+    "price": "1.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 14,
+  "fields": {
+    "order": 10,
+    "product": 11,
+    "price": "3.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 15,
+  "fields": {
+    "order": 10,
+    "product": 10,
+    "price": "8.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 16,
+  "fields": {
+    "order": 10,
+    "product": 13,
+    "price": "100.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 17,
+  "fields": {
+    "order": 11,
+    "product": 14,
+    "price": "45.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 18,
+  "fields": {
+    "order": 11,
+    "product": 13,
+    "price": "100.00",
+    "quantity": 3
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 19,
+  "fields": {
+    "order": 11,
+    "product": 3,
+    "price": "1.00",
+    "quantity": 4
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 20,
+  "fields": {
+    "order": 11,
+    "product": 11,
+    "price": "3.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 21,
+  "fields": {
+    "order": 12,
+    "product": 3,
+    "price": "1.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 22,
+  "fields": {
+    "order": 12,
+    "product": 11,
+    "price": "3.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 23,
+  "fields": {
+    "order": 12,
+    "product": 12,
+    "price": "4.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 24,
+  "fields": {
+    "order": 12,
+    "product": 10,
+    "price": "8.00",
+    "quantity": 2
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 25,
+  "fields": {
+    "order": 12,
+    "product": 9,
+    "price": "7.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 26,
+  "fields": {
+    "order": 12,
+    "product": 7,
+    "price": "5.00",
+    "quantity": 3
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 27,
+  "fields": {
+    "order": 12,
+    "product": 4,
+    "price": "3.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "shop.orderitem",
+  "pk": 28,
+  "fields": {
+    "order": 12,
+    "product": 8,
+    "price": "6.00",
+    "quantity": 1
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add \u0421\u0442\u0430\u0442\u044c\u044f",
+    "content_type": 7,
+    "codename": "add_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change \u0421\u0442\u0430\u0442\u044c\u044f",
+    "content_type": 7,
+    "codename": "change_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete \u0421\u0442\u0430\u0442\u044c\u044f",
+    "content_type": 7,
+    "codename": "delete_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view \u0421\u0442\u0430\u0442\u044c\u044f",
+    "content_type": 7,
+    "codename": "view_article"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add \u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044e",
+    "content_type": 8,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change \u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044e",
+    "content_type": 8,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete \u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044e",
+    "content_type": 8,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view \u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044e",
+    "content_type": 8,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add \u0417\u0430\u043a\u0430\u0437",
+    "content_type": 9,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change \u0417\u0430\u043a\u0430\u0437",
+    "content_type": 9,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete \u0417\u0430\u043a\u0430\u0437",
+    "content_type": 9,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view \u0417\u0430\u043a\u0430\u0437",
+    "content_type": 9,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add \u0420\u0430\u0437\u0434\u0435\u043b",
+    "content_type": 10,
+    "codename": "add_rubric"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change \u0420\u0430\u0437\u0434\u0435\u043b",
+    "content_type": 10,
+    "codename": "change_rubric"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete \u0420\u0430\u0437\u0434\u0435\u043b",
+    "content_type": 10,
+    "codename": "delete_rubric"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view \u0420\u0430\u0437\u0434\u0435\u043b",
+    "content_type": 10,
+    "codename": "view_rubric"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add \u0422\u043e\u0432\u0430\u0440",
+    "content_type": 11,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change \u0422\u043e\u0432\u0430\u0440",
+    "content_type": 11,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete \u0422\u043e\u0432\u0430\u0440",
+    "content_type": 11,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view \u0422\u043e\u0432\u0430\u0440",
+    "content_type": 11,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add order item",
+    "content_type": 12,
+    "codename": "add_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change order item",
+    "content_type": 12,
+    "codename": "change_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete order item",
+    "content_type": 12,
+    "codename": "delete_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view order item",
+    "content_type": 12,
+    "codename": "view_orderitem"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add \u0422\u043e\u0432\u0430\u0440",
+    "content_type": 13,
+    "codename": "add_articlesproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change \u0422\u043e\u0432\u0430\u0440",
+    "content_type": 13,
+    "codename": "change_articlesproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete \u0422\u043e\u0432\u0430\u0440",
+    "content_type": 13,
+    "codename": "delete_articlesproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view \u0422\u043e\u0432\u0430\u0440",
+    "content_type": 13,
+    "codename": "view_articlesproduct"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Cj5gfBx9vMGh$gzmbkuh+1Ajb19tmrcjOFwi1G1HK+bqB/i9r+D45fOg=",
+    "last_login": "2019-08-11T05:25:38.791Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "11@11.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-08-10T06:23:53.704Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "shop.order",
+  "pk": 9,
+  "fields": {
+    "user": 1,
+    "date_created": "2019-08-11"
+  }
+},
+{
+  "model": "shop.order",
+  "pk": 10,
+  "fields": {
+    "user": 1,
+    "date_created": "2019-08-11"
+  }
+},
+{
+  "model": "shop.order",
+  "pk": 11,
+  "fields": {
+    "user": 1,
+    "date_created": "2019-08-12"
+  }
+},
+{
+  "model": "shop.order",
+  "pk": 12,
+  "fields": {
+    "user": 1,
+    "date_created": "2019-08-12"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2019-08-10T06:32:57.590Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "\u0420\u0430\u0437\u0434\u0435\u043b 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2019-08-10T06:32:59.635Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2019-08-10T06:33:02.309Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2019-08-10T06:52:25.133Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "\u041c\u0438\u043a\u0440\u043e\u0432\u043e\u043b\u043d\u043e\u0432\u043a\u0430",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2019-08-11T04:41:39.865Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "\u0421\u0442\u0430\u0442\u044c\u044f 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u041c\\u0438\\u043a\\u0440\\u043e\\u0432\\u043e\\u043b\\u043d\\u043e\\u0432\\u043a\\u0430\"}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2019-08-11T04:56:54.268Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2019-08-11T04:59:33.208Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "\u0417\u0430\u043a\u0430\u0437: 8",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2019-08-11T04:59:33.210Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "\u0417\u0430\u043a\u0430\u0437: 7",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2019-08-11T04:59:33.212Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "\u0417\u0430\u043a\u0430\u0437: 6",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2019-08-11T04:59:33.214Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "\u0417\u0430\u043a\u0430\u0437: 5",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2019-08-11T04:59:33.216Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "\u0417\u0430\u043a\u0430\u0437: 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2019-08-11T04:59:33.218Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "\u0417\u0430\u043a\u0430\u0437: 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2019-08-11T04:59:33.220Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "\u0417\u0430\u043a\u0430\u0437: 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2019-08-11T04:59:33.222Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "\u0417\u0430\u043a\u0430\u0437: 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2019-08-11T04:59:53.780Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "\u0421\u0442\u0430\u0442\u044c\u044f 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2019-08-11T05:06:09.932Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0438 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2019-08-11T05:06:12.326Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2019-08-11T05:06:20.609Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2019-08-11T05:06:47.852Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2019-08-11T05:07:07.105Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2019-08-11T05:07:37.789Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2019-08-11T05:08:02.363Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2019-08-11T05:08:32.801Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 6",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2019-08-11T05:08:59.348Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 7",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2019-08-11T05:09:20.867Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "10",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a 8",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2019-08-11T05:12:28.540Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2019-08-11T05:12:37.994Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "11",
+    "object_repr": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2019-08-11T05:16:45.873Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0438 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2019-08-11T05:16:58.734Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "\u0420\u0430\u0437\u0434\u0435\u043b 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2019-08-11T05:17:26.281Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 \u0434\u043b\u044f \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u043e\u0432",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2019-08-11T05:18:10.012Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "12",
+    "object_repr": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2019-08-11T05:19:54.159Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "\u0411\u044b\u0442\u043e\u0432\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2019-08-11T05:19:56.183Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0430\u0448\u0438\u043d\u044b",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2019-08-11T05:20:13.287Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "13",
+    "object_repr": "\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2019-08-11T05:20:49.182Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "14",
+    "object_repr": "\u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2019-08-11T05:21:31.062Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "\u041d\u0430\u0431\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u041d\\u043e\\u0443\\u0442\\u0431\\u0443\\u043a 1\"}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u041a\\u043e\\u043c\\u043f\\u043b\\u0435\\u043a\\u0442\\u0443\\u044e\\u0449\\u0438\\u0435 1\"}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u0421\\u0442\\u0438\\u0440\\u0430\\u043b\\u044c\\u043d\\u0430\\u044f \\u043c\\u0430\\u0448\\u0438\\u043d\\u0430 1\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2019-08-11T05:21:58.269Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "\u041d\u0430\u0431\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u041a\\u043e\\u043c\\u043f\\u043b\\u0435\\u043a\\u0442\\u0443\\u044e\\u0449\\u0438\\u0435 1\"}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u041d\\u043e\\u0443\\u0442\\u0431\\u0443\\u043a 1\"}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u0421\\u0442\\u0438\\u0440\\u0430\\u043b\\u044c\\u043d\\u0430\\u044f \\u043c\\u0430\\u0448\\u0438\\u043d\\u0430 1\"}}, {\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u041d\\u043e\\u0443\\u0442\\u0431\\u0443\\u043a 8\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2019-08-11T05:22:52.506Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "\u041d\u0430\u0431\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 2",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u041d\\u043e\\u0443\\u0442\\u0431\\u0443\\u043a 8\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2019-08-11T05:23:23.142Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "\u041d\u0430\u0431\u043e\u0440 \u0442\u043e\u0432\u0430\u0440\u043e\u0432 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 2",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"\\u0422\\u043e\\u0432\\u0430\\u0440\", \"object\": \"\\u041d\\u043e\\u0443\\u0442\\u0431\\u0443\\u043a 8\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2019-08-11T05:23:52.883Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "\u041d\u043e\u0443\u0442\u0431\u0443\u043a\u0438 \u0438 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0443\u044e\u0449\u0438\u0435",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"\\u041a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u044e\", \"object\": \"\\u041d\\u043e\\u0443\\u0442\\u0431\\u0443\\u043a\\u0438\", \"fields\": [\"index\"]}}]"
+  }
+}
+]
