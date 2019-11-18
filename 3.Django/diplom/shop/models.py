@@ -4,7 +4,8 @@ from django.contrib.auth.models import User
 
 class Product(models.Model):
     name = models.CharField(max_length=128, verbose_name='Название товара')
-    content = models.TextField(max_length=2000, verbose_name='Описание товара')
+    content = models.TextField(max_length=20000, verbose_name='Описание товара')
+    characteristics = models.TextField(max_length=2000, verbose_name='Характеристики')
     price = models.PositiveIntegerField(blank=True, verbose_name='Цена')
     image = models.ImageField(upload_to='products/%Y/%m/%d/', verbose_name='Изображение')
     published = models.DateField(auto_now_add=True, db_index=True, verbose_name='Дата публикации')

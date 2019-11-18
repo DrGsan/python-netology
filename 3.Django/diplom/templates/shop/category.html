@@ -12,6 +12,7 @@
           <h2>{{product}}</h2>
           <a href="{% url 'product' product.slug%}">
             <img src="{{product.image.url}}" width="180">
+              <b>{{product.price}} ₽</b>
           </a>
           <form method="POST" action="?page={{current_page}}">
             {% csrf_token %}
