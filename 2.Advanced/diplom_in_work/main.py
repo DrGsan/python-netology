@@ -8,6 +8,7 @@ from pprint import pprint
 from operator import itemgetter
 import json
 
+
 # TODO: Остановился на функции get_3_profile_photos.
 #       Нужно сформировать json с тремя фотками.
 #       Отфильтровать фотки по количеству лайков
@@ -31,6 +32,7 @@ def get_access_token(user_id):
     result = print('?'.join((oauth_url, urlencode(auth_data))))
     return result
 
+
 # Работа с БД
 def create_db():
     """
@@ -46,7 +48,8 @@ def create_db():
              """)
             print('База данных и таблицы созданы')
 
-def pg_db_connect(option,users_list=None):
+
+def pg_db_connect(option, users_list=None):
     """
     :param option: Режим вызова функции.
         insert - вставка значений в БД
@@ -68,6 +71,7 @@ def pg_db_connect(option,users_list=None):
                 """)
                 result = cur.fetchall()
             return result
+
 
 # TOKEN
 token = '5fe54a5c9d3d89e522fe8a36f91eeb739fd986361dc2bf58a3703e003f80270795e873dc99ec17d573ef7'
