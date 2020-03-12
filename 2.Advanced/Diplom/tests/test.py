@@ -1,5 +1,6 @@
 import unittest
-from diplom_2.vkinder import Vkinder
+
+from vkinder import Vkinder
 from mock import patch
 
 info_user = [{'id': '3178423', 'first_name': 'Александр', 'last_name': 'Драгой',
@@ -7,7 +8,7 @@ info_user = [{'id': '3178423', 'first_name': 'Александр', 'last_name': 
               'interests': '', 'music': '', 'books': ''}]
 
 
-@patch('builtins.input', lambda *args: '20', '25')
+@patch('builtins.input', lambda *args: '18', '30')
 class Test(unittest.TestCase):
 
     def test_is_instance_of_vkinder(self):

@@ -1,12 +1,12 @@
-import requests
+import json
 import re
-import datetime
-import psycopg2 as pg
+from operator import itemgetter
+from pprint import pprint
 from time import sleep
 from urllib.parse import urlencode
-from pprint import pprint
-from operator import itemgetter
-import json
+
+import psycopg2 as pg
+import requests
 
 
 # TODO: Остановился на функции get_3_profile_photos.
