@@ -7,7 +7,7 @@ def task():
     get_employees()
     print('-'*50)
     print('Looks like everything is fine')
-    print('It was main.py')
+    print('It was test.py')
     print('-'*50)
     print('-'*50)
     return

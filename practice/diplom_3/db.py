@@ -3,7 +3,7 @@ import json
 from pprint import pprint
 
 
-def connect_database(dbname='diplom', user='diplom_user', password='123456'):
+def connect_database(dbname='netology_db', user='drg', password='DrGmac23'):
     conn = psycopg2.connect(f"dbname={dbname} user={user} password={password}")
     cur = conn.cursor()
     return cur, conn, dbname
