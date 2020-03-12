@@ -38,7 +38,7 @@ def create_db():
     """
     Создает таблицу, если ее еще нет в БД
     """
-    with pg.connect('dbname=netology_db user=netology_user password=user') as conn:
+    with pg.connect('dbname=netology_db user=drg password=DrGmac23') as conn:
         with conn.cursor() as cur:
             cur.execute("""
             create table if not exists profile (
@@ -57,7 +57,7 @@ def pg_db_connect(option, users_list=None):
     :param users_list: Список пользователей для проверки/вставки
     :return: возвращает список пользователей из БД
     """
-    with pg.connect('dbname=netology_db user=netology_user password=user') as conn:
+    with pg.connect('dbname=netology_db user=drg password=DrGmac23') as conn:
         if option == 'insert':
             with conn.cursor() as cur:
                 for user in users_list:
@@ -411,13 +411,12 @@ class User:
         next_func = self.get_3_profile_photos(first_ten_users)
         return next_func
 
-        #
-        # with open('profile_list.json', 'w', encoding='utf-8') as json_text:
-        #     data = profile_photo_list[:3]
-        #     json.dump(data, json_text, indent=2, ensure_ascii=False)
-        #     some_text = json.dumps(data, indent=2, ensure_ascii=False)
-        # return some_text
-        # return  pprint(json_list)
+        with open('profile_list.json', 'w', encoding='utf-8') as json_text:
+            data = profile_photo_list[:3]
+            json.dump(data, json_text, indent=2, ensure_ascii=False)
+            some_text = json.dumps(data, indent=2, ensure_ascii=False)
+        return some_text
+        return pprint(json_list)
 
 
 # Запрашиваем токен
@@ -430,5 +429,5 @@ user = User(3178423)
 
 pprint(User.get_pair_user_lists(user))
 
-# pprint(User.get_pair_user_parameters(user, '3178423, 143181452'))
-# User.get_3_profile_photos(user, [3178423])
+pprint(User.get_pair_user_parameters(user, '3178423, 143181452'))
+User.get_3_profile_photos(user, [3178423])
