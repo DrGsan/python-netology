@@ -1,6 +1,6 @@
 import unittest
 
-from vkinder import Vkinder
+from main import Vkinder
 from mock import patch
 
 info_user = [{'id': '3178423', 'first_name': 'Александр', 'last_name': 'Драгой',
