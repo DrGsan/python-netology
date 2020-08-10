@@ -7,30 +7,12 @@ from urllib.parse import urlencode
 from pprint import pprint
 from operator import itemgetter
 import json
+from settings.config import Config
 
 
 # TODO: Остановился на функции get_3_profile_photos.
 #       Нужно сформировать json с тремя фотками.
 #       Отфильтровать фотки по количеству лайков
-
-# Запрос токена
-def get_access_token(user_id):
-    """
-    Запрашивает токен упользователяпо его id vk или псевдониму
-    :return: ссылка для авторизации пользователя
-    """
-    oauth_url = 'https://oauth.vk.com/authorize'
-    app_id = 7049864
-    auth_data = {
-        'client_id': app_id,
-        'redirect_uti': 'www.ok.ru',
-        'display': 'page',
-        'scope': 'status, friends, users, photos, offline',
-        'response_type': 'token',
-        'v': 5.101
-    }
-    result = print('?'.join((oauth_url, urlencode(auth_data))))
-    return result
 
 
 # Работа с БД
@@ -74,7 +56,7 @@ def pg_db_connect(option, users_list=None):
 
 
 # TOKEN
-token = '9c4b09af23df0e8d2453405ed382ceeb4f55c4108e2e1e17cd49e029b2b07bc90193f856bf72dc14ace8c'
+token = Config().token
 
 
 class User:
@@ -402,11 +384,6 @@ class User:
         # return some_text
         # return  pprint(json_list)
 
-
-# Запрашиваем токен
-# get_access_token(3178423)
-
-#access_token = 9c4b09af23df0e8d2453405ed382ceeb4f55c4108e2e1e17cd49e029b2b07bc90193f856bf72dc14ace8c
 
 # 143181452
 # 3178423
